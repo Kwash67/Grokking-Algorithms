@@ -7,7 +7,7 @@ int binary_search(int ordered_list[], size_t size, int item);
 int main(void){
     int my_list[]={1,2,3,4,5,6,7,8};
     size_t size = sizeof(my_list) / sizeof(my_list[0]); // Calculate array size using size_t
-    int ans = binary_search(my_list, size, 81); // Ans must be 3
+    int ans = binary_search(my_list, size, 8); 
     printf("Position is : %d\n", ans);
     return(0);
 }

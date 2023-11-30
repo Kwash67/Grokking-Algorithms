@@ -1,5 +1,7 @@
 #include <stdio.h>
+// Find Notes at the end.
 
+/* Function Prototype */
 int binary_search(int ordered_list[], size_t size, int item);
 
 int main(void){
@@ -30,3 +32,14 @@ int binary_search(int ordered_list[], size_t size, int item){
     }
     return 0;
 }
+
+// NOTES
+/* 
+    -> Apparently, you can't calculate the size of the array within the binary_search function
+       using sizeof(ordered_list) / sizeof(ordered_list[0]). 
+       When you pass an array to a function in C, it decays into a pointer to its first element. 
+       Therefore, sizeof(ordered_list) in the function will not give you the size of the array 
+       but rather the size of a pointer (which doesn't change regardless of the array's size).
+
+    -> 
+*/

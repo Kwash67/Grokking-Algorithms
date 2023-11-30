@@ -6,9 +6,11 @@ int binary_search(int ordered_list[], size_t size, int item);
 
 int main(void){
     int my_list[]={1,2,3,4,5,6,7,8};
-    size_t size = sizeof(my_list) / sizeof(my_list[0]); // Calculate array size using size_t
+    // Calculate array size. Array size-1 will be the initial upper limit/ highest index.
+    size_t size = sizeof(my_list) / sizeof(my_list[0]); 
+    // 
     int ans = binary_search(my_list, size, 8); 
-    printf("Position is : %d\n", ans);
+    printf("\nPosition is : %d\n", ans);
     return(0);
 }
 
